@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Estimate | Gilroy Electric</title>
+    <link rel="stylesheet" href="assets/css/styles_clean.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/images/GEbanner.jpg" alt="Gilroy Electric Logo" height="40"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="estimate.html">Get Estimate</a></li>
+                </ul>
+                <ul class="nav-contact">
+                    <li>Call us at:<a href="tel:+14088422649" class="nav-phone" style="text-decoration:none;">(408) 842-2649</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div style="max-width: 700px; margin: 2.5rem auto 0 auto; text-align: center;">
+            <p style="font-size:1.15rem; color:#222; font-weight:600; margin:0;">For quickest and most reliable service, please contact us first at</p>
+            <p style="font-size:1.25rem; color:#222; font-weight:bold; margin:0.2rem 0 0 0;"><a href="tel:+14088422649" class="phone-glow" style="color:#222; font-weight:bold; text-decoration:none;">(408) 842-2649</a></p>
+        </div>
+        <section class="estimate">
+            <h2>Request a Free Estimate</h2>
+            <form id="estimateForm" action="https://formspree.io/f/yourformid" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="service">Service Needed:</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected hidden>Select a service...</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Lighting">Lighting</option>
+                    <option value="Panel Upgrade">Panel Upgrade</option>
+                    <option value="Wiring">Wiring</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="details">Details:</label>
+                <textarea id="details" name="details" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="estimateMessage"></div>
+        </section>
+    </main>
+    <div class="home-btn-container">
+        <a href="index.html" class="home-btn">Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Gilroy Electric. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
