@@ -1,5 +1,7 @@
 # ⚡ Gilroy Electric Website
 
+Link to website: https://squigman99.github.io/Gilroy-Electric-Website/index.html
+
 This repository contains the source code for the **Gilroy Electric** static website.
 
 The site provides company information, service details, and an estimate request page.  
